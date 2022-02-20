@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+*{
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{font-family: 'Outfit', sans-serif;}
+button{font-family: 'Outfit', sans-serif;}
+
+h2{
+  font-family: 'Outfit', sans-serif;
+  text-transform: uppercase;
+  font-size: 25px;
+
+}
+p{font-size: 12px;
+line-height: 1.5;}
+
+button{
+  background-color: white;
+  border: 3px solid white;
+  border-radius: 20px;
+  padding: 10px 2px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.column-one{background-color:hsl(31, 77%, 52%); color: #fff;}
+.column-two{background-color:hsl(184, 100%, 22%); color: #fff;}
+.column-three{background-color:hsl(179, 100%, 13%); color: #fff;}
+
+.column-one button{color:hsl(31, 77%, 52%) ;}
+.column-two button{color:hsl(184, 100%, 22%) ;}
+.column-three button{color: hsl(179, 100%, 13%);}
+
+button:hover{background-color: transparent; color: white;}
+
+.main{padding: 40px;}
+.wall{padding: 25px;}
+.wall img{margin-bottom: 25px;}
+.wall p{margin-bottom: 30px;}
+.wall h3{margin-bottom: 20px;}
+
+
+
+
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media(min-width: 800px){
+
+.main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  max-width: 790px;
+  margin: auto;
+}
+.column-one{border-radius: 10px 0 0 10px;}
+.column-three{border-radius: 0 10px 10px 0;}
+.wall{padding: 45px;}
+.wall p{margin-bottom: 80px;}
+
+}
+  </style>
+
+
+</head>
+<body>
+  
+
+
+  <div class="main">
+
+     <div class="wall column-one">
+       <img src="images/icon-sedans.svg" alt="">
+       <h2>Sedans</h2>
+       <p> Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+  or on your next road trip.</p>
+       <button class="btn">Learn more</button>
+     </div>
+
+
+     <div class="wall column-two">
+       <img src="images/icon-suvs.svg" alt="">
+       <h2>  SUVs</h2>
+       <p> Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+  and off-road adventures.</p>
+  <button class="btn">Learn more</button>
+
+
+ 
+     </div>
+
+
+     <div class="wall column-three">
+       <img src="images/icon-luxury.svg" alt="">
+       <h2>Luxury</h2>
+       <p>ruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+  rental and arrive in style.</p>
+  <button class="btn">Learn more</button>
+     </div>
+    
+
+
+
+  </div>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
